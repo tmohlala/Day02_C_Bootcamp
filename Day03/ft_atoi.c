@@ -19,7 +19,7 @@ int ft_atoi(char *str) {
     while(*str == ' ' || *str == '\r' || *str == '\t' || *str == '\n' || *str == '\f') {
         str++;
     }
-    if((sign = ft_sign(*str)) == -1) {
+    if((sign = ft_sign(*str)) == -1 || *str == '+') {
         str++;
     }
     while(ft_isdigit(*str)) {
