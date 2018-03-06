@@ -1,7 +1,7 @@
 int ft_is_prime(int nb) {
     int i = 5;
 
-    if(nb < 3) {
+    if(nb <= 3) {
         return nb > 1;
     }
     else if((nb % 2) == 0 || (nb % 3) == 0) {
