@@ -1,0 +1,6 @@
+Compile program with:
+    gcc -Wall -Werror -Wextra program.c -g
+Then use gdb:
+    $> gdb ./a.out
+    (gdb) run
+    (gdb) backtrace
