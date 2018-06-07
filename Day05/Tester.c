@@ -3,8 +3,13 @@
 //
 
 #include <stdio.h>
-int ft_str_is_numeric(char* str);
+#include <string.h>
+//int ft_str_is_numeric(char* str);
+char *ft_strcat(char *dest, char *src);
 
 int main() {
-    printf("%d\n", ft_str_is_numeric(""));
+    char src[] = " is a test";
+    char dest[] = "This ";
+    printf("strcat: %s ft_strcat: %s\n", strcat(dest, src), ft_strcat(dest, src));
+    //printf("%d\n", ft_str_is_numeric(""));
 }
